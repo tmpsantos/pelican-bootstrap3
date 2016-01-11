@@ -1,7 +1,13 @@
 <style>
 	#banner{
-	    background-image:url("{{ SITEURL}}/{{ BANNER }}");
-	}
+        background-image:url("{{ SITEURL}}/{{ BANNER }}");
+    }
+
+    @media (max-width: 650px) {
+	    #banner{
+            background-image:url("{{ SITEURL}}/{{ BANNER_SMALL }}");
+        }
+    }
 </style>
 
 <div id="banner">
