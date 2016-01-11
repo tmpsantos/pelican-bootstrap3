@@ -1,0 +1,13 @@
+<ul class="pager">
+    {% if article.prev_article %}
+        <li class="previous"><a href="{{ SITEURL }}/{{ article.prev_article.url }}">&larr; Mais antigos</a></li>
+    {% else %}
+        <li class="previous disabled"><a href="#">&larr; Mais antigos</a></li>
+    {% endif %}
+    {% if article.next_article %}
+        <li class="next"><a
+                href="{{ SITEURL }}/{{ article.next_article.url }}">Mais novos &rarr;</a></li>
+    {% else %}
+        <li class="next disabled"><a href="#">Mais novos &rarr;</a></li>
+    {% endif %}
+</ul>
